@@ -1,0 +1,54 @@
+aside.main-sidebar
+	section.sidebar
+		.user-panel
+			.pull-left.image
+				img(src='/adminlte/dist/img/drr.jpg',alt='User Image',style='height:50px').img-circle
+			.pull-left.info
+				p Admin
+				a(href='#')
+					i.fa.fa-circle.text-success 
+					| Online
+		form(action='#',method='get').sidebar-form
+			.input-group
+				input(type='text', name='cari',placeholder='Search...').form-control
+				span.input-group-btn
+						button(type='submit', name='search')#search-btn.btn.btn-flat
+							i.fa-fa-search
+		ul.sidebar-menu
+			li.header
+				| Main Navigation
+			li.treeview
+				a(href='/blankpage')
+					i.fa.fa-dashboard
+					span
+						| Dashboard
+			li.treeview
+				a(href='#')
+					i.fa.fa-table
+					span
+						| Tables
+						span.pull-right-container
+						i.fa.fa-angle-left.pull-right
+				ul.treeview-menu
+					li
+						a(href='/customers')
+							i.fa.fa-circle-o
+							| Customer
+					li
+						a(href='/produk')
+							i.fa.fa-circle-o
+							| Produk
+					li
+						a(href='/suplier')
+							i.fa.fa-circle-o
+							| Supplier		
+			li
+				a(href='#')
+					i.fa.fa-laptop
+					span
+						| UI Elements
+			li
+				a(href='#')
+					i.fa.fa-laptop
+					span
+						| UI Elements
